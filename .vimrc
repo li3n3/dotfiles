@@ -71,17 +71,20 @@ au BufNewFile *.py,*.pyw,*.c,*.h set fileformat=unix
 " The following section contains suggested settings.  While in no way required
 " to meet coding standards, they are helpful.
 
-" Set the default file encoding to UTF-8: ``set encoding=utf-8``
+" Set the default file encoding to UTF-8:
+set encoding=utf-8
 
 " Puts a marker at the beginning of the file to differentiate between UTF and
 " UCS encoding (WARNING: can trick shells into thinking a text file is actually
 " a binary file when executing the text file): ``set bomb``
 
 " For full syntax highlighting:
-"``let python_highlight_all=1``
-"``syntax on``
+let python_highlight_all=1
+syntax on
 
-" Automatically indent based on file type: ``filetype indent on``
-" Keep indentation level from previous line: ``set autoindent``
+" Automatically indent based on file type:
+filetype indent on
+" Keep indentation level from previous line:
+set autoindent
 
 " Folding based on indentation: ``set foldmethod=indent``
