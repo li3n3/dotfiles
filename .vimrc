@@ -43,12 +43,12 @@ highlight BadWhitespace ctermbg=red guibg=red
 " Display tabs at the beginning of a line in Python mode as bad.
 au BufRead,BufNewFile *.py,*.pyw match BadWhitespace /^\t\+/
 " Make trailing whitespace be flagged as bad.
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.rb match BadWhitespace /\s\+$/
 
 " Wrap text after a certain number of characters
 " Python: 79 
 " C: 79
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h set textwidth=79
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.rb set textwidth=79
 
 " Turn off settings in 'formatoptions' relating to comment formatting.
 " - c : do not automatically insert the comment leader when wrapping based on
