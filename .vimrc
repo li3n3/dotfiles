@@ -24,6 +24,10 @@ au BufRead,BufNewFile *py,*pyw,*.c,*.h set tabstop=8
 " Python: 4 spaces
 " C: tabs (pre-existing files) or 4 spaces (new files)
 au BufRead,BufNewFile *.py,*pyw set shiftwidth=4
+" ts == tabstop, the number of spaces that tab in file uses, sts == softtabstop,
+" number of spaces that tab uses while editing, sw == shiftwidth, number of
+" spaces to use for (auto)indent step
+autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
 au BufRead,BufNewFile *.py,*.pyw set expandtab
 fu Select_c_style()
     if search('^\t', 'n', 150)
