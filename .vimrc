@@ -42,7 +42,7 @@ au BufRead,BufNewFile *.c,*.h call Select_c_style()
 au BufRead,BufNewFile Makefile* set noexpandtab
 
 " Use the below highlight group when displaying bad whitespace is desired.
-" highlight BadWhitespace ctermbg=red guibg=red
+highlight BadWhitespace ctermbg=red guibg=red
 
 " Actually that just means that every space flashes red. That was awful. This is calmer:
 autocmd InsertEnter * syn clear EOLWS | syn match EOLWS excludenl /\s\+\%#\@!$/
