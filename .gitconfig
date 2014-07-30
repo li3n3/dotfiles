@@ -15,3 +15,5 @@
 	ui = true
 [url "git@github.banksimple.com:ops/"]
 		insteadOf = ops:
+[push]
+	default = matching
