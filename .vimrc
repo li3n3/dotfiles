@@ -1,4 +1,5 @@
 " vimrc file for following the coding standards specified in PEP 7 & 8.
+" Plus some additions.
 "
 " To use this file, source it in your own personal .vimrc file (``source
 " <filename>``) or, if you don't have a .vimrc file, you can just symlink to it
@@ -15,9 +16,15 @@
 " Only basic settings needed to enforce the style guidelines are set.
 " Some suggested options are listed but commented out at the end of this file.
 
+" But first! Don't do back-compatible vi nonsense, because Ben said so.
+set nocompatible
+
+" Make backspace behave in a sensible manner.
+set backspace=indent,eol,start
+
 " Number of spaces that a pre-existing tab is equal to.
 " For the amount of space used for a new tab use shiftwidth.
-au BufRead,BufNewFile *py,*pyw,*.c,*.h set tabstop=8
+au BufRead,BufNewFile *py,*pyw,*.c,*.h set tabstop=4
 au BufRead,BufNewFile *.md set filetype=markdown
 
 " What to use for an indent.
@@ -93,8 +100,14 @@ let python_highlight_all=1
 syntax on
 
 " Automatically indent based on file type:
-filetype indent on
+filetype plugin indent on
 " Keep indentation level from previous line:
 set autoindent
 
 " Folding based on indentation: ``set foldmethod=indent``
+
+" Line numbers!
+set number
+" This line will do relative line numbering
+" set relativenumber
+
