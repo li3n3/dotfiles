@@ -58,7 +58,8 @@ autocmd InsertLeave * syn clear EOLWS | syn match EOLWS excludenl /\s\+$/
 highlight EOLWS ctermbg=red guibg=red
 
 " Display tabs at the beginning of a line in Python mode as bad.
-au BufRead,BufNewFile *.py,*.pyw match BadWhitespace /^\t\+/
+" au BufRead,BufNewFile *.py,*.pyw match BadWhitespace /^\t\+/
+
 " Make trailing whitespace be flagged as bad.
 " au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.rb match BadWhitespace /\s\+$/
 
@@ -113,4 +114,3 @@ set number
 
 " Show input at the bottom of the screen
 set showcmd
-
