@@ -50,7 +50,7 @@ au BufRead,BufNewFile *.c,*.h call Select_c_style()
 au BufRead,BufNewFile Makefile* set noexpandtab
 
 " Use the below highlight group when displaying bad whitespace is desired.
-highlight BadWhitespace ctermbg=red guibg=red
+" highlight BadWhitespace ctermbg=red guibg=red
 
 " Actually that just means that every space flashes red. That was awful. This is calmer:
 autocmd InsertEnter * syn clear EOLWS | syn match EOLWS excludenl /\s\+\%#\@!$/
@@ -60,7 +60,7 @@ highlight EOLWS ctermbg=red guibg=red
 " Display tabs at the beginning of a line in Python mode as bad.
 au BufRead,BufNewFile *.py,*.pyw match BadWhitespace /^\t\+/
 " Make trailing whitespace be flagged as bad.
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.rb match BadWhitespace /\s\+$/
+" au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.rb match BadWhitespace /\s\+$/
 
 " Wrap text after a certain number of characters
 " Python: 79 
@@ -110,4 +110,7 @@ set autoindent
 set number
 " This line will do relative line numbering
 " set relativenumber
+
+" Show input at the bottom of the screen
+set showcmd
 
