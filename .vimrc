@@ -53,7 +53,8 @@ au BufRead,BufNewFile Makefile* set noexpandtab
 " highlight BadWhitespace ctermbg=red guibg=red
 
 " Actually that just means that every space flashes red. That was awful. This is calmer:
-autocmd InsertEnter * syn clear EOLWS | syn match EOLWS excludenl /\s\+\%#\@!$/
+" I'm not sure what this next line does, so I'm removing it...
+" autocmd InsertEnter * syn clear EOLWS | syn match EOLWS excludenl /\s\+\%#\@!$/
 autocmd InsertLeave * syn clear EOLWS | syn match EOLWS excludenl /\s\+$/
 highlight EOLWS ctermbg=red guibg=red
 

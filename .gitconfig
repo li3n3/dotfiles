@@ -17,3 +17,5 @@
 		insteadOf = ops:
 [push]
 	default = matching
+[core]
+	editor = vim
