@@ -22,9 +22,12 @@ set nocompatible
 " Make backspace behave in a sensible manner.
 set backspace=indent,eol,start
 
+" Start with some sensible tab settings
+set tabstop=4 softtabstop=4 shiftwidth=4 expandtab smarttab
+
 " Number of spaces that a pre-existing tab is equal to.
 " For the amount of space used for a new tab use shiftwidth.
-au BufRead,BufNewFile *py,*pyw,*.c,*.h set tabstop=4
+au BufRead,BufNewFile *py,*pyw,*.c,*.h,*.html set tabstop=4
 au BufRead,BufNewFile *.md set filetype=markdown
 
 " What to use for an indent.
