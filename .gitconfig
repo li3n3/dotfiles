@@ -1,8 +1,8 @@
 [user]
 	name = Liene Verzemnieks
-	email = liene@simple.com
+	email = liene.v@gmail.com
 [github]
-	user = liene
+	user = li3n3
 [alias]
   co = checkout
   ci = commit
@@ -13,8 +13,6 @@
   dump = cat-file -p
 [color]
 	ui = true
-[url "git@github.banksimple.com:ops/"]
-		insteadOf = ops:
 [push]
 	default = matching
 [core]
